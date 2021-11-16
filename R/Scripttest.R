@@ -1,5 +1,6 @@
 library(devtools)
 library(usethis)
+library(broom)
 
 usethis::use_git()
 usethis::use_github()
@@ -17,3 +18,8 @@ use_r("test_id")
 
 #load function to test drive
 load_all()
+
+#
+usethis::use_r("compute_corr")
+
+devtools::load_all()
