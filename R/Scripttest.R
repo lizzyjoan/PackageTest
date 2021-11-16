@@ -1,7 +1,10 @@
 library(devtools)
 library(usethis)
 
-use_git()
+usethis::use_git()
+usethis::use_github()
+
+devtools::check()
 
 #define function
 use_r("test_id")
